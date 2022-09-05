@@ -10,6 +10,10 @@ body {
     list-style: none;
     text-decoration: none;
 }
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
 
 h2 {
     font-size: 30px;
@@ -17,6 +21,10 @@ h2 {
     text-decoration: underline;
     text-decoration-color: #FF3E1D;
     text-underline-offset: 7px;
+}
+
+.subheader {
+    font-size: 20px;
 }
 
 nav {
@@ -84,6 +92,7 @@ main {
 }
 
 header {
+    margin-right: -1%;
     margin-top: 30px;
     border-bottom: 2px solid #FF3E1D;
     display: flex;
@@ -125,4 +134,47 @@ article {
     margin-top: 25px;
     padding-right: 65px;
     font-size: 14px;
+}
+
+.btn {
+    padding: 8px 30px;
+    background-color: #fff;
+    border: 2px solid #FF3E1D;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FF3E1D;
+}
+
+.btn:hover {
+    background-color: #FF3E1D;
+    color: #373867;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+#first-section {
+    border-bottom: 1px solid #373867;
+    padding: 39px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    width: 60%;
+}
+
+.db {
+    display: block;
+}
+#first-section img{
+    width: 346px;
+    height: 301px;
+}
+
+#first-section p{
+    margin-top: 40px;
 }
