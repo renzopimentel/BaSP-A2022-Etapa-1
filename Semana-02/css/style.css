@@ -88,15 +88,33 @@ p {
 
 main {
     display: inline-block;
-    padding: 0 1% 0 25%;
+    padding: 0 3% 0 25%;
+}
+
+footer {
+    padding: 0 3% 0 25%;
+}
+
+footer div {
+    display: inline-block;
+    width: 30%;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #373867;
+}
+
+footer li a:hover {
+    color: #171877;
 }
 
 header {
-    margin-right: -1%;
+    margin-right: -4%;
     margin-top: 30px;
     border-bottom: 2px solid #FF3E1D;
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
 }
 
@@ -157,7 +175,7 @@ article {
 }
 
 #first-section {
-    border-bottom: 1px solid #373867;
+    border-bottom: 2px solid #373867;
     padding: 39px 0;
     display: flex;
     justify-content: space-between;
@@ -178,3 +196,51 @@ article {
 #first-section p{
     margin-top: 40px;
 }
+
+#second-section {
+    margin-top: 34px;
+    padding-bottom: 27px;
+    border-bottom: 2px solid #373867;
+}
+
+#third-section {
+    margin-top: 30px;
+    padding-bottom: 27px;
+    border-bottom: 2px solid #373867;
+}
+
+.third-section-item img {
+    width: 474px;
+    height: 384px;
+}
+
+#third-section h3, #third-section button, #our-history h3 {
+    margin: 25px 0px;
+}
+
+#third-section article{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 38%;
+    margin-top: 25px;
+    margin-right: 10%;
+    font-size: 14px;
+}
+
+#third-section button{
+    padding: 8px 14px;
+    background-color: #fff;
+    border: 2px solid #FF3E1D;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FF3E1D;
+}
+
+
+#third-section button:hover {
+    background-color: #FF3E1D;
+    color: #373867;
+}
+
