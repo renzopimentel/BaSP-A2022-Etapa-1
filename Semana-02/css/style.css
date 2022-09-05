@@ -11,11 +11,6 @@ body {
     text-decoration: none;
 }
 
-header {
-    padding-left: 30%;
-    padding-right: 5%;
-}
-
 h2 {
     font-size: 30px;
     font-weight: 700;
@@ -24,13 +19,23 @@ h2 {
     text-underline-offset: 7px;
 }
 
-ul {
-    text-decoration: none;
+nav {
+    padding: 88px 0px 65px 0;
+    border-bottom: 1px solid #373867D9;
 }
 
-li {
+nav li {
+    padding: 19px 0px;
+}
+
+nav li + li {
+    border-top: 1px solid #373867B0;
+}
+
+nav a {
     font-size: 20px;
-    font-weight: 400;
+    text-decoration: none;
+    color: #373867;
 }
 
 p {
@@ -40,10 +45,23 @@ p {
 
 
 #sidebar {
-    width: 28%;
+    width: 12.5%;
     height: 100%;
     float: left;
     position: fixed;
     background-color: #AACE9B;
-    padding-left: 20px;
+    padding: 29px;
+}
+
+#sidebar-contact h2{
+    margin: 65px 0 25px 0;
+}
+
+#sidebar-contact p{
+    margin-right: 20px;
+}
+
+main {
+    display: inline-block;
+    padding: 0 1% 0 25%;
 }
