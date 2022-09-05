@@ -28,6 +28,10 @@ nav li {
     padding: 19px 0px;
 }
 
+nav li a:hover {
+    color: #FF3E1D;
+}
+
 nav li + li {
     border-top: 1px solid #373867B0;
 }
@@ -40,12 +44,11 @@ nav a {
 
 p {
     font-size: 14px;
-    font-weight: 400;
 }
 
 
 #sidebar {
-    width: 12.5%;
+    width: 18%;
     height: 100%;
     float: left;
     position: fixed;
@@ -57,11 +60,69 @@ p {
     margin: 65px 0 25px 0;
 }
 
-#sidebar-contact p{
-    margin-right: 20px;
+#sidebar-contact-ways a p{
+    margin: 25px 0 11px 0;
+}
+
+#sidebar-contact-ways a + p {
+    border-top: 1px solid #37386770;
+}
+
+#center-contact {
+    border-bottom: 1px solid #37386770;;
+}
+
+#sidebar-contact-ways i {
+    display: inline;
+    margin: 0px 10px;
+    font-size: 20px;
 }
 
 main {
     display: inline-block;
     padding: 0 1% 0 25%;
+}
+
+header {
+    margin-top: 30px;
+    border-bottom: 2px solid #FF3E1D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#company{
+    display: inline-block;
+    width: 85%;
+}
+
+#social-logos {
+    width: 170px;
+}
+
+.social-icons {
+    font-size: 29px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #5D5D5D;
+}
+
+.social-icons a:hover {
+    text-decoration: none;
+    color: #FF3E1D;
+}
+
+#bold {
+    font-weight: 700;
+}
+
+article {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 49%;
+    margin-top: 25px;
+    padding-right: 65px;
+    font-size: 14px;
 }
