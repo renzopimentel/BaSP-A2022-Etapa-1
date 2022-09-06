@@ -32,6 +32,10 @@ h3{
     font-size: 20px;
 }
 
+.bb-side {
+    border-bottom: 1px solid #37386770;
+}
+
 .bb {
     border-bottom: 2px solid #373867;
 }
@@ -79,15 +83,14 @@ p {
 }
 
 #sidebar-contact-ways a p{
+    text-decoration: none;
+    color: #373867;
     margin: 25px 0 11px 0;
+
 }
 
-#sidebar-contact-ways a + p {
-    border-top: 1px solid #37386770;
-}
-
-#center-contact {
-    border-bottom: 1px solid #37386770;;
+#sidebar-contact-ways p{
+    padding: 10px;
 }
 
 #sidebar-contact-ways i {
@@ -431,7 +434,17 @@ input[name="contact_area"] {
 #about-us li{
     line-height: 22px;
 }
+
 #about-us li a {
     text-decoration: none;
     color: #373867;
+}
+
+#icons-footer{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#icons-footer div{
+    margin-bottom: 20px;
 }
