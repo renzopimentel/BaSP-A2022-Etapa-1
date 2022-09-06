@@ -50,7 +50,7 @@
         <main>
             <header>
                 <div id="company">
-                    <p><span id="bold">Trackgenix</span> by GigaTech Software Solutions SA</p>
+                    <p><span class="bold">Trackgenix</span> by GigaTech Software Solutions SA</p>
                 </div>
                 <div id="social-logos" class="social-icons">
                     <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
@@ -60,7 +60,7 @@
                     <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>    
             </header>
-            <section id="first-section">
+            <section id="first-section" >
                 <div class="left-section">
                     <h1><span class="db">Hi, I'm Trackgenix</span> by GigaTeck Software Solutions</h1>
                     <p class="subheader">A practical and easy to use system</p>
@@ -74,7 +74,7 @@
                     <span><img src="./assets/laptop.jpeg" alt="laptop"></span>
                 </div>
             </section> 
-            <section id="second-section">                                                                                           
+            <section id="second-section" class="bb">                                                                                           
                 <h2>Why you should use me</h2>
                 <div>
                     <article>
@@ -119,7 +119,7 @@
                     </article>
                 </div>
             </section>
-            <section id="third-section">
+            <section id="third-section" class="bb">
                 <h2>Features</h2>
                 <article class="third-section-item">
                     <img src="./assets/clock.jpeg" alt="Clock">
@@ -166,41 +166,53 @@
                     <button class="btn">MORE</button>
                 </article>
             </section>
-            <section>
+            <section id="fourth-section" class="bb">
                 <h2>Get some info</h2>
                 <form>
-                    <div>
-                        <label for="full-name">Full name:</label>
-                        <input type="text" name="full-name" value placeholder="Full name">
+                    <div id="info">
+                        <div>
+                            <label for="full-name">Full name:</label>
+                            <input type="text" name="full-name" value placeholder="Full name">
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" value placeholder="Email">
+                        </div>
                     </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" value placeholder="Email">
-                    </div>
-                    <div>
+                    
+                    <div id="contact-area">
                         <p>Contact area:</p>
-                        <input type="radio" id="human-resources" name="contact_area" value="Human resources">
-                        <label for="html">
-                            Human resources
-                        </label>
-                        <input type="radio" id="systems" name="contact_area" value="Systems">
-                        <label for="css">
-                            Systems
-                        </label>
-                        <input type="radio" id="marketing" name="contact_area" value="Marketing">
-                        <label for="javascript">
-                            Marketing
-                        </label>
+                        <div class="input">
+                            <input type="radio" id="human-resources" name="contact_area" value="Human resources">
+                            <label for="html">
+                                Human resources
+                            </label>
+                        </div>
+                        <div class="input">
+                            <input type="radio" id="systems" name="contact_area" value="Systems">
+                            <label for="css">
+                                Systems
+                            </label>
+                        </div>
+                        <div class="input">
+                            <input type="radio" id="marketing" name="contact_area" value="Marketing">
+                            <label for="javascript">
+                                Marketing
+                            </label>
+                        </div> 
                     </div>
-                    <div>
+                    <div class="message">
                         <p>Message:</p>
                         <textarea name="message" rows="10" cols="40" placeholder="Message"></textarea>
                     </div>
-                    <button>Reset</button>
-                    <button>Send</button>
+                    <div id="buttons">
+                        <button class="btn-reset">Reset</button>
+                        <button class="btn-send">Send</button>
+                    </div>
+                    
                 </form>
             </section>
-            <section>
+            <section id="fifth-section">
                 <h2>History of the business</h2>
                 <div>
                     <article>

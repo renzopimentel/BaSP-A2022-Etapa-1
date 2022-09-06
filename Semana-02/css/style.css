@@ -27,6 +27,10 @@ h2 {
     font-size: 20px;
 }
 
+.bb {
+    border-bottom: 2px solid #373867;
+}
+
 nav {
     padding: 88px 0px 65px 0;
     border-bottom: 1px solid #373867D9;
@@ -141,7 +145,7 @@ header {
     color: #FF3E1D;
 }
 
-#bold {
+.bold {
     font-weight: 700;
 }
 
@@ -175,7 +179,6 @@ article {
 }
 
 #first-section {
-    border-bottom: 2px solid #373867;
     padding: 39px 0;
     display: flex;
     justify-content: space-between;
@@ -200,13 +203,11 @@ article {
 #second-section {
     margin-top: 34px;
     padding-bottom: 27px;
-    border-bottom: 2px solid #373867;
 }
 
 #third-section {
     margin-top: 30px;
     padding-bottom: 27px;
-    border-bottom: 2px solid #373867;
 }
 
 .third-section-item img {
@@ -244,3 +245,118 @@ article {
     color: #373867;
 }
 
+#fourth-section {
+    margin-top: 20px;
+}
+
+form {
+    margin: 20px 30px;
+}
+
+#contact-area {
+    display: inline-block;
+    width: 39%;
+    vertical-align: top;
+}
+
+#contact-area label, #contact-area input {
+    display: inline-block;
+    margin: 5px 0px;
+    width: initial;
+}
+
+#contact-area p {
+    margin-bottom: 8px;
+}
+
+#info {
+    display: inline-block;
+    width: 59%;
+}
+
+#info div{
+    margin-bottom: 40px;
+}
+
+#info input{
+    width: 80%;
+    border: 2px solid #373867;
+    border-radius: 4px;
+    height: 45px;
+    padding-left: 10px;
+}
+
+#info label{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+#info input,label{
+    display: block;
+} 
+
+
+.input {
+    display: block;
+}
+
+#contact-area {
+    display: inline-block;
+    width: 39%;
+    vertical-align: top;
+}
+
+#contact-area label, #contact-area input {
+    display: inline-block;
+    margin: 5px 0px;
+    width: initial;
+}
+.message p{
+    padding-bottom: 5px;
+}
+.message textarea{
+    width: 85%;
+    height: 240px;
+    border-radius: 6px;
+    border: 2px solid #cfcbcb;
+    padding: 10px 0 0 15px;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+}
+
+#buttons {
+    padding: 30px 0 0 15px;
+}
+
+.btn-reset {
+    padding: 8px 14px;
+    margin-right: 15px;
+    background-color: #FF3E1D99;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #373867;
+}
+
+.btn-reset:hover {
+    background-color: #FF3E1D;
+}
+
+.btn-send {
+    padding: 8px 41px;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    background-color: #AACE9B;
+}
+
+.btn-send:hover {
+    background-color: #4EB125;
+}
+
+input[name="contact_area"] {
+	accent-color: #373867;
+}
+
+#fifth-section{
+    margin-top: 40px;
+}
