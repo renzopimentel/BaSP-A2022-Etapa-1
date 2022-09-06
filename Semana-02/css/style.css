@@ -206,8 +206,37 @@ article {
 }
 
 #second-section {
+    display: inline-block;
     margin-top: 34px;
     padding-bottom: 27px;
+}
+
+#second-section div{
+    padding-top: 20px;
+}
+
+#second-section article{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 29px;
+}
+
+#second-section article div{
+    top: 20%;
+    margin-left: 20px;
+}
+
+#second-section article div h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#second-section img {
+    width: 107px;
+    height: 107px;
+    float: left;
+    padding-right: 15px;
 }
 
 #third-section {
