@@ -223,7 +223,6 @@ article {
 
 #second-section article div{
     top: 20%;
-    margin-left: 20px;
 }
 
 #second-section article div h3{
@@ -393,6 +392,7 @@ input[name="contact_area"] {
 
 #fifth-section{
     padding: 40px 0 10px 0;
+    display: inline-block;
 }
 
 #fifth-section div > img {
@@ -413,19 +413,22 @@ input[name="contact_area"] {
     width: 90%;
 }
 
+#something-else img{
+    width: 333px;
+    height: 227px;
+}
 #something-else h3{
     margin-top: 70px;
 }
 
-#something-else-1 {
+#something-else article{
     width: 100%;
     margin-top: 10px;
 }
 
-#something-else-1 img{
-    margin-top: 10px;
-    width: 333px;
-    height: 227px;
+.img-1{
+    padding: 0 24px 16px 0;
+    
     float: left;
 }
 
@@ -434,11 +437,11 @@ input[name="contact_area"] {
     margin-top: -10px;
 }
 
-#something-else-2 img{
-    width: 384px;
-    height: 239px;
+.img-2{
     float: right;
+    padding: 0 0 16px 24px;
 }
+
 #about-us{
     padding: 40px 0;
 }
