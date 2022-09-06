@@ -7,20 +7,25 @@ body {
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
 }
+
 h1{
     font-size: 40px;
     font-weight: 700;
 }
 
-h2 {
+h2{
     font-size: 30px;
     font-weight: 700;
     text-decoration: underline;
     text-decoration-color: #FF3E1D;
     text-underline-offset: 7px;
+}
+
+h3{
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .subheader {
@@ -38,6 +43,7 @@ nav {
 
 nav li {
     padding: 19px 0px;
+    list-style: none;
 }
 
 nav li a:hover {
@@ -96,12 +102,8 @@ main {
 }
 
 footer {
-    padding: 0 3% 0 25%;
-}
-
-footer div {
-    display: inline-block;
-    width: 30%;
+    text-align: center;
+    list-style: none;
 }
 
 footer li a {
@@ -358,5 +360,78 @@ input[name="contact_area"] {
 }
 
 #fifth-section{
-    margin-top: 40px;
+    padding: 40px 0 10px 0;
+}
+
+#fifth-section div > img {
+    margin: 0px 10px 20px 0px;
+    width: 330px;
+    float: left;
+}
+
+#foundation article{
+    width: 61%;
+}
+
+#foundation article h3{
+    margin: 40px 0 20px 0;
+}
+
+#something-else{
+    width: 90%;
+}
+
+#something-else h3{
+    margin-top: 70px;
+}
+
+#something-else-1 {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#something-else-1 img{
+    margin-top: 10px;
+    width: 333px;
+    height: 227px;
+    float: left;
+}
+
+#something-else-2{
+    width: auto;
+    margin-top: -10px;
+}
+
+#something-else-2 img{
+    width: 384px;
+    height: 239px;
+    float: right;
+}
+#about-us{
+    padding: 40px 0;
+}
+
+#about-us div{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+#about-us h4{
+    margin-bottom: 10px;
+}
+
+#about-us ol{
+    list-style-type: decimal;
+    list-style-position: inside;
+    text-align: left;
+    margin-left: 160px;
+}
+
+#about-us li{
+    line-height: 22px;
+}
+#about-us li a {
+    text-decoration: none;
+    color: #373867;
 }
