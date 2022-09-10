@@ -16,10 +16,14 @@ Creation of Trackgenix in figma, making the Landing Page responvise, Admins and 
 
 ### Week 01
 
-Started with the creation of the READEME.md and index.html file. I´ve separated between sections (sidebar, first section, history, about us, etc) 
+Started with the creation of the README.md and index.html file. I´ve separated between sections (sidebar, first section, history, about us, etc) 
 
 ### Week 02
 
-In week 02, we are going to implement css in the page, in order to make it aestetically resemble to the Landing Page created in Figma. 
+In week 02, we are going to implement css in the page, in order to make it aesthetically resemble to the Landing Page created in Figma.
+
+### Week 03
+
+This week we are implementing flexbox for the page layout, in order to make the landing page responsive for mobile, tablet and desktop.
 
 By _Renzo Pimentel_
