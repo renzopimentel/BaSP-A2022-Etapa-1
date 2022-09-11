@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Roboto', sans-serif;
     color: #373867;
@@ -70,12 +69,12 @@ p {
 
 
 #sidebar {
+    position: fixed;
     width: 18%;
     height: 100%;
-    float: left;
-    position: fixed;
-    background-color: #AACE9B;
     padding: 29px;
+    float: left;
+    background-color: #AACE9B;
 }
 
 #sidebar-contact h2{
@@ -196,6 +195,7 @@ article {
 .db {
     display: block;
 }
+
 #first-section img{
     width: 346px;
     height: 301px;
@@ -328,7 +328,6 @@ form {
     display: block;
 } 
 
-
 .input {
     display: block;
 }
@@ -344,9 +343,11 @@ form {
     margin: 5px 0px;
     width: initial;
 }
+
 .message p{
     padding-bottom: 5px;
 }
+
 .message textarea{
     width: 85%;
     height: 240px;
@@ -428,7 +429,6 @@ input[name="contact_area"] {
 
 .img-1{
     padding: 0 24px 16px 0;
-    
     float: left;
 }
 
