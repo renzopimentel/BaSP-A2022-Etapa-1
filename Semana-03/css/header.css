@@ -1,16 +1,18 @@
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     border-bottom: 2px rgba(241, 51, 18, 1) solid ;
     padding-bottom: 11.2px;
     width: 100%;
 }
 
 #company p{
+    align-items: center;
     font-size: 12px;
 }
 
 #burguer-menu {
+    align-items: flex-start;
     padding-right:20px;
     color: rgba(241, 51, 18, 1);
 }
