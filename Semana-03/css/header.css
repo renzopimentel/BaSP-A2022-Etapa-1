@@ -1,8 +1,13 @@
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 2px rgba(241, 51, 18, 1) solid ;
+    padding-bottom: 11.2px;
     width: 100%;
-    gap: 32px;
+}
+
+#company p{
+    font-size: 12px;
 }
 
 #burguer-menu {
@@ -11,7 +16,7 @@ header {
 }
 
 #social-logos {
-    width: 170px;
+    text-align: center;
 }
 
 .social-icons {
