@@ -3,7 +3,7 @@ main{
     flex-wrap: wrap;
 }
 
-.main {
+#main-header-footer-container {
     width: 90%;
     margin: auto;
 }
@@ -73,24 +73,15 @@ main{
 .features {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    gap: 32px;
 }
 
 .features article{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 4px;
-     width: 100%;
+    flex-wrap: wrap;
+    margin: 10px 0px;
 }
 
 .third-section-item img {
     width: 100%;
-    height: 100%;
-    max-width: 474px;
-    max-height: 384px;
 }
 
 #third-section h3{
@@ -127,17 +118,27 @@ form{
 
 #contact-area {
     display: flex;
-    column-gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+#contact-area label {
+    display: block;
 }
 
 #contact-area label, #contact-area input {
-    display: flex;
+    flex: auto;
     margin: 5px 0px;
-    width: initial;
 }
 
 #contact-area p {
+    width: 100%;
     margin-bottom: 8px;
+}
+
+#contact-area div.input-radio {
+    display: flex;
 }
 
 #fourth-section{
@@ -150,18 +151,7 @@ form{
 }
 
 #info {
-    display: flex;
-    flex-direction: column;
-}
-
-#info input{
-    width: 90%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    height: 20px;
-    border: 2px solid #373867;
-    border-radius: 4px;
-    height: 45px;
+    flex: auto;
 }
 
 #info label{
@@ -186,22 +176,30 @@ form{
     width: initial;
 }
 
+.message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .message p{
     padding-bottom: 5px;
 }
 
 .message textarea{
-    width: 90%;
-    height: 240px;
-    border-radius: 6px;
-    border: 2px solid #cfcbcb;
-    padding: 10px 0 0 15px;
-    font-family: 'Roboto', sans-serif;
-    resize: none;
+    width: 96%;
+    margin: 10px 0px;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    margin-bottom: 15px;
 }
 
 #buttons {
-    padding: 30px 0 0 15px;
+    padding: 10px 0 0 10px;
 }
 
 .btn-reset {
@@ -235,7 +233,13 @@ input[name="contact_area"] {
 
 #fifth-section{
     display: flex;
+    flex-wrap: wrap;
     padding: 40px 0 10px 0;
+}
+
+#foundation{
+    flex: auto;
+    margin-top: 10px;
 }
 
 #fifth-section div > img {
@@ -243,12 +247,13 @@ input[name="contact_area"] {
     width: 330px;
     float: left;
 }
-
-#foundation article{
-    width: 61%;
+@media (min-width: 1024px){
+    #foundation{
+        width: 61%;
+    }
 }
 
-#foundation article h3{
+#foundation h3{
     margin: 40px 0 20px 0;
 }
 
@@ -282,4 +287,89 @@ input[name="contact_area"] {
 .img-2{
     float: right;
     padding: 0 0 16px 24px;
+}
+
+/* Tablet */
+@media (min-width: 481px) {
+    #main-title {
+        flex-direction: row;
+    }
+
+    #main-title div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #main-title > span {
+        width: 50%;
+    }
+
+    .features article {
+        width: 45%;
+        margin-right: 20px;
+    }
+
+    section#features article {
+        width: 45%;
+    }
+
+    section#features article:nth-child(even) {
+        margin-left: 20px;
+        padding-left: 20px;
+        border-left: #37386730 1px solid;
+    }
+
+    #contact-area {
+        width: 50%;
+        padding-left: 8%;
+    }
+
+    section#our-history span.wrap-img {
+        width: 47%;
+        margin: 0px 35px 15px 5px;
+        float: left;
+    }
+
+    section#our-history p + p span.wrap-img {
+        margin: 15px 0px 5px 15px;
+        float: right;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    #main-container {
+        width: 72%;
+        margin: 1%;
+    }
+
+    section#our-history span.wrap-img {
+        max-width: 400px;
+    }
+
+    p.subheader {
+        font-size: 20px;
+    }
+
+    p.subheader + p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    section#features img {
+        max-width: 474px;
+    }
+
+    section#our-history p {
+        font-size: 16px;
+    }
+
+    section#our-history span.wrap-img {
+        margin: 0;
+    }
+
+    section#our-history img {
+        max-width: 380px;
+    }
 }

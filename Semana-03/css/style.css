@@ -123,6 +123,11 @@ article {
     color: #FF3E1D;
 }
 
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .btn:hover {
     background-color: #FF3E1D;
     color: #373867;
@@ -132,7 +137,14 @@ article {
     margin-top: 30px;
 }
 
-
+input, textarea{
+   width: 96%;
+    margin: 10px 0px;
+    padding: 8px;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    font: inherit; 
+}
 
 
 

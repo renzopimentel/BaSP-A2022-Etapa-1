@@ -53,7 +53,7 @@
                 </div> 
             </div>
         </aside>
-        <div class="main-header-footer-container">
+        <div id="main-header-footer-container">
             <header>
                 <div id="company">
                     <i class="fa fa-solid fa-bars" id="burguer-menu"></i>
@@ -139,7 +139,7 @@
                             <button>MORE</button>
                         </article>
                         <article class="third-section-item">
-                            <img src="./assets/books.jpeg" alt="Books">
+                            <img src="./assets/books.png" alt="Books">
                             <h3>Reports</h3>
                             <p>
                                 Explanation here of the correspondent reason. We left this with a random text 
@@ -172,85 +172,83 @@
                 <section id="fourth-section" class="bb">
                     <h2>Get some info</h2>
                     <form>
-                        <div id="info">
-                            <div>
-                                <label for="full-name">Full name:</label>
-                                <input type="text" name="full-name" value placeholder="Full name">
+                        <div class="flex">
+                            <div id="info">
+                                <div>
+                                    <label for="full-name">Full name:</label>
+                                    <input type="text" name="full-name" value placeholder="Full name">
+                                </div>
+                                <div>
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" value placeholder="Email">
+                                </div>
                             </div>
-                            <div>
-                                <label for="email">Email:</label>
-                                <input type="email" name="email" value placeholder="Email">
+                            <div id="contact-area">
+                                <p>Contact area:</p>
+                                <div class="input">
+                                    <input type="radio" id="human-resources" name="contact_area" value="Human resources">
+                                    <label for="html">
+                                        Human resources
+                                    </label>
+                                </div>
+                                <div class="input">
+                                    <input type="radio" id="systems" name="contact_area" value="Systems">
+                                    <label for="css">
+                                        Systems
+                                    </label>
+                                </div>
+                                <div class="input">
+                                    <input type="radio" id="marketing" name="contact_area" value="Marketing">
+                                    <label for="javascript">
+                                        Marketing
+                                    </label>
+                                </div> 
                             </div>
+                            <div class="message">
+                                <p>Message:</p>
+                                <textarea name="message" rows="10" cols="40" placeholder="Message"></textarea>
+                            </div>
+                            <div id="buttons">
+                                <button class="btn-reset">Reset</button>
+                                <button class="btn-send">Send</button>
+                            </div>  
                         </div>
-                        <p>Contact area:</p>
-                        <div id="contact-area">
-                            <div class="input">
-                                <input type="radio" id="human-resources" name="contact_area" value="Human resources">
-                                <label for="html">
-                                    Human resources
-                                </label>
-                            </div>
-                            <div class="input">
-                                <input type="radio" id="systems" name="contact_area" value="Systems">
-                                <label for="css">
-                                    Systems
-                                </label>
-                            </div>
-                            <div class="input">
-                                <input type="radio" id="marketing" name="contact_area" value="Marketing">
-                                <label for="javascript">
-                                    Marketing
-                                </label>
-                            </div> 
-                        </div>
-                        <div class="message">
-                            <p>Message:</p>
-                            <textarea name="message" rows="10" cols="40" placeholder="Message"></textarea>
-                        </div>
-                        <div id="buttons">
-                            <button class="btn-reset">Reset</button>
-                            <button class="btn-send">Send</button>
-                        </div>  
                     </form>
                 </section>
                 <section id="fifth-section" class="bb">
                     <h2>History of the business</h2>
-                        <div id="foundation">
-                            <article>
-                                <h3>The foundation</h3>
-                                <p>
-                                    Explanation here of the correspondent component. We left this with a random text for 
-                                    the moment. This is just an example. Don't take this text seriously. Explanation here 
-                                    of the correspondent component. We left this with a random text for the moment. This is 
-                                    just an example. Don't take this text seriously. Explanation here of the correspondent 
-                                    component. We left this with a random text for the moment. This is just an example. 
-                                    Don't take this text seriously.
-                                </p>
-                            </article>
-                        </div>
-                        <div id="something-else">
-                            <h3>Something Else</h3>
-                            <article> 
-                                <p>
-                                    <span class="img-1">
-                                        <!-- <img src="./assets/se1.jpeg" alt="People sitted using a tablet"> -->
-                                    </span>
-                                    Explanation here of the correspondent component. We left this with a random text for 
-                                    the moment. This is just an example. Don't take this text seriously. Explanation here 
-                                    of the correspondent component. We left this with a random text for the moment. This is 
-                                    just an example. Don't take this text seriously.
-                                </p>
-                                <p>
-                                    <span class="img-2">
-                                        <!-- <img src="./assets/se2.jpeg" alt="Person with a lightbulb"> -->
-                                    </span>
-                                    Explanation here of the correspondent component. We left this with a random text for 
-                                    the moment. This is just an example. Don't take this text seriously. Explanation here 
-                                    of the correspondent component. We left this with a random text for the moment. This is 
-                                    just an example. Don't take this text seriously.
-                                </p>
-                            </article>
-                        </div>
+                    <div id="foundation">
+                        <h3>The foundation</h3>
+                        <p>
+                            Explanation here of the correspondent component. We left this with a random text for 
+                            the moment. This is just an example. Don't take this text seriously. Explanation here 
+                            of the correspondent component. We left this with a random text for the moment. This is 
+                            just an example. Don't take this text seriously. Explanation here of the correspondent 
+                            component. We left this with a random text for the moment. This is just an example. 
+                            Don't take this text seriously.
+                        </p>
+                    </div>
+                    <div id="something-else">
+                        <h3>Something Else</h3>
+                        <p>
+                            <span class="img-1">
+                                <img src="./assets/se1.jpeg" alt="People sitted using a tablet">
+                            </span>
+                            Explanation here of the correspondent component. We left this with a random text for 
+                            the moment. This is just an example. Don't take this text seriously. Explanation here 
+                            of the correspondent component. We left this with a random text for the moment. This is 
+                            just an example. Don't take this text seriously.
+                        </p>
+                        <p>
+                            <span class="img-2">
+                                <img src="./assets/se2.jpeg" alt="Person with a lightbulb">
+                            </span>
+                            Explanation here of the correspondent component. We left this with a random text for 
+                            the moment. This is just an example. Don't take this text seriously. Explanation here 
+                            of the correspondent component. We left this with a random text for the moment. This is 
+                            just an example. Don't take this text seriously.
+                        </p>
+                    </div>
                 </section>
                 
             </main>
