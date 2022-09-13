@@ -119,20 +119,15 @@ main{
     color: #373867;
 }
 
-#fourth-section {
+form{
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-form {
-    margin: 20px 30px;
+    flex-direction: column;
+    gap: 28px;
 }
 
 #contact-area {
     display: flex;
-    width: 39%;
-    vertical-align: top;
+    column-gap: 15px;
 }
 
 #contact-area label, #contact-area input {
@@ -145,21 +140,28 @@ form {
     margin-bottom: 8px;
 }
 
-#info {
-    display: flex;
-    width: 59%;
+#fourth-section{
+    width: 100%;
+    padding: 10px 0;
 }
 
-#info div{
-    margin-bottom: 40px;
+#fourth-section h2{
+    margin-bottom: 10px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
 }
 
 #info input{
-    width: 80%;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 20px;
     border: 2px solid #373867;
     border-radius: 4px;
     height: 45px;
-    padding-left: 10px;
 }
 
 #info label{
@@ -175,14 +177,11 @@ form {
     display: block;
 }
 
-#contact-area {
-    display: flex;
-    width: 39%;
-    vertical-align: top;
+#contact-area input{
+    margin-top: 10px;
 }
 
 #contact-area label, #contact-area input {
-    display: flex;
     margin: 5px 0px;
     width: initial;
 }
@@ -192,7 +191,7 @@ form {
 }
 
 .message textarea{
-    width: 85%;
+    width: 90%;
     height: 240px;
     border-radius: 6px;
     border: 2px solid #cfcbcb;
@@ -283,11 +282,4 @@ input[name="contact_area"] {
 .img-2{
     float: right;
     padding: 0 0 16px 24px;
-}
-
-@media screen and (max-width: 480px){
-    main > img{
-        width: 80%;
-        max-width: 350px;
-    }
 }
