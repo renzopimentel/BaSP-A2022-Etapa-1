@@ -47,13 +47,6 @@ p {
     font-size: 14px;
 }
 
-.main-header-footer-container {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    margin: 3%;
-}
-
 #company{
     display: inline-block;
     width: 85%;
@@ -95,11 +88,6 @@ article {
     font-weight: 600;
     text-transform: uppercase;
     color: #FF3E1D;
-}
-
-.flex{
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .btn:hover {

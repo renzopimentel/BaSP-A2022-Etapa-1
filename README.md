@@ -22,15 +22,15 @@ Started with the creation of the README.md and index.html file. I´ve separated 
 
 In week 02, we are going to implement css in the page, in order to make it aesthetically resemble to the Landing Page created in Figma.
 
-[Weekly Work](../BaSP-A2022-Etapa-1/Semana-02)
+[Weekly Work](https://github.com/renzopimentel/BaSP-A2022-Etapa-1/tree/master/Semana-02)
 
-[To see working site](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html)
+[To see working site](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-02/index.html)
 
 ## Week 03 - Web Responsive w/ Flexbox
 
 This week we are implementing flexbox for the page layout, in order to make the landing page responsive for mobile, tablet and desktop. We need to use media queries for the breakpoints, developing it for mobile first.
 
-[Weekly Work](../BaSP-A2022-Etapa-1/Semana-03)
+[Weekly Work](https://github.com/renzopimentel/BaSP-A2022-Etapa-1/tree/master/Semana-03)
 
 [To see working site](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html)
 
