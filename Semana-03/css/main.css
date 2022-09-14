@@ -4,7 +4,7 @@ main{
 }
 
 #main-header-footer-container {
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
@@ -140,15 +140,12 @@ form{
 #fourth-section h2{
     margin-bottom: 10px;
 }
+
 #contact-area {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 10px;
-}
-
-#contact-area label {
-    display: block;
 }
 
 #contact-area label, #contact-area input {
@@ -165,22 +162,23 @@ form{
     display: flex;
 }
 
-
-
-
-
-#info {
-    flex: auto;
+#info div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 #info label{
-    font-size: 14px;
-    padding-bottom: 5px;
-}
-
-#info input,label{
-    display: block;
+    margin: 10px 0;
+    font-weight: bold;
 } 
+
+#info input{
+    height: 30px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
 
 .input {
     display: block;
@@ -250,9 +248,9 @@ input[name="contact_area"] {
 	accent-color: #373867;
 }
 
+/* Fifth Section */
 #fifth-section{
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 14px;
     padding: 40px 0 10px 0;
 }
 
@@ -263,7 +261,6 @@ input[name="contact_area"] {
 
 #fifth-section div > img {
     margin: 0px 10px 20px 0px;
-    width: 330px;
     float: left;
 }
 
@@ -271,31 +268,15 @@ input[name="contact_area"] {
     margin: 40px 0 20px 0;
 }
 
-#something-else{
-    width: 90%;
+.img-1, .img-2{
+    top: 0.25em;
+    max-width: 35%;
 }
 
-#something-else img{
-    width: 333px;
-    height: 227px;
-}
-#something-else h3{
-    margin-top: 70px;
-}
-
-#something-else article{
-    width: 100%;
-    margin-top: 10px;
-}
-
+    
 .img-1{
     padding: 0 24px 16px 0;
     float: left;
-}
-
-#something-else-2{
-    width: auto;
-    margin-top: -10px;
 }
 
 .img-2{
@@ -310,16 +291,6 @@ input[name="contact_area"] {
     }
     #second-section article{
         width: 47%;
-    }
-
-    #main-title div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    #main-title > span {
-        width: 50%;
     }
 
     .features article {
@@ -337,56 +308,25 @@ input[name="contact_area"] {
         border-left: #37386730 1px solid;
     }
 
+    #info {
+        width: 55%;
+    }
+
     #contact-area {
-        width: 50%;
-        padding-left: 8%;
+        width: 40%;
+        margin-top: 30px;   
     }
 
-    section#our-history span.wrap-img {
-        width: 47%;
-        margin: 0px 35px 15px 5px;
-        float: left;
-    }
-
-    section#our-history p + p span.wrap-img {
-        margin: 15px 0px 5px 15px;
-        float: right;
+    .f-info {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
-    #main-container {
-        width: 72%;
-        margin: 1%;
-    }
-
-    section#our-history span.wrap-img {
-        max-width: 400px;
-    }
-
-    p.subheader {
-        font-size: 20px;
-    }
-
-    p.subheader + p {
-        font-size: 16px;
-        font-weight: 600;
-    }
-
-    section#features img {
-        max-width: 474px;
-    }
-
-    section#our-history p {
-        font-size: 16px;
-    }
-
-    section#our-history span.wrap-img {
-        margin: 0;
-    }
-
-    section#our-history img {
-        max-width: 380px;
+    #main-header-footer-container {
+        margin-left: 19%;
+        width: 80%;
     }
 }
