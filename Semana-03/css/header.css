@@ -1,9 +1,9 @@
 header {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 2px rgba(241, 51, 18, 1) solid ;
-    padding-bottom: 11.2px;
-    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px #F33413 solid;
+    padding: 10px 0;
 }
 
 #company p{
@@ -11,16 +11,18 @@ header {
     font-size: 12px;
 }
 
-#burguer-menu {
-    align-items: flex-start;
-    padding-right:20px;
-    color: rgba(241, 51, 18, 1);
+#burguer {
+    color: #F33413;
+    margin-right: 10px;
 }
 
 #social-logos {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
 }
 
-.social-icons {
-    font-size: 20px;
+#social-logos a{
+    margin-right: 5px;
 }
