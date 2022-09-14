@@ -73,7 +73,6 @@ main{
     padding-right: 15px;
 }
 
-
 /* Third Section */
 #third-section {
     display: flex;
@@ -120,7 +119,6 @@ main{
     color: #FF3E1D;
 }
 
-
 #third-section button:hover {
     background-color: #FF3E1D;
     color: #373867;
@@ -131,6 +129,7 @@ main{
     width: 100%;
     padding: 10px 0;
 }
+
 form{
     display: flex;
     flex-direction: column;
@@ -178,6 +177,7 @@ form{
     border: 1px solid #373867;
     border-radius: 4px;
     margin-bottom: 20px;
+    height: 42px;
 }
 
 .input {
@@ -259,20 +259,28 @@ input[name="contact_area"] {
     margin-top: 10px;
 }
 
+#foundation h3{
+    margin: 40px 0 20px 0;
+}
+
+#something-else{
+    display: flex;
+    flex-direction: column;
+}
+
+#something-else img{
+    max-width: 333px;
+    max-height: 227px;
+}
 #fifth-section div > img {
     margin: 0px 10px 20px 0px;
     float: left;
-}
-
-#foundation h3{
-    margin: 40px 0 20px 0;
 }
 
 .img-1, .img-2{
     top: 0.25em;
     max-width: 35%;
 }
-
     
 .img-1{
     padding: 0 24px 16px 0;
@@ -298,16 +306,6 @@ input[name="contact_area"] {
         margin-right: 20px;
     }
 
-    section#features article {
-        width: 45%;
-    }
-
-    section#features article:nth-child(even) {
-        margin-left: 20px;
-        padding-left: 20px;
-        border-left: #37386730 1px solid;
-    }
-
     #info {
         width: 55%;
     }
@@ -328,5 +326,9 @@ input[name="contact_area"] {
     #main-header-footer-container {
         margin-left: 19%;
         width: 80%;
+    }
+
+    .features article{
+        width: 47%;
     }
 }

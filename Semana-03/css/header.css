@@ -26,3 +26,9 @@ header {
 #social-logos a{
     margin-right: 5px;
 }
+
+@media (min-width: 480px){
+    #company p{
+        font-size: 14px;
+    }    
+}
