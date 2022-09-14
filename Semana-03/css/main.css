@@ -126,12 +126,20 @@ main{
     color: #373867;
 }
 
+/* Fourth Section */
+#fourth-section{
+    width: 100%;
+    padding: 10px 0;
+}
 form{
     display: flex;
     flex-direction: column;
     gap: 28px;
 }
 
+#fourth-section h2{
+    margin-bottom: 10px;
+}
 #contact-area {
     display: flex;
     flex-direction: column;
@@ -157,14 +165,9 @@ form{
     display: flex;
 }
 
-#fourth-section{
-    width: 100%;
-    padding: 10px 0;
-}
 
-#fourth-section h2{
-    margin-bottom: 10px;
-}
+
+
 
 #info {
     flex: auto;
