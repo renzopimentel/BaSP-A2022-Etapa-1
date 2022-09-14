@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     display: flex;
     overflow-x: hidden;
@@ -37,36 +39,8 @@ h3{
     font-size: 20px;
 }
 
-.bb-side {
-    border-bottom: 1px solid #37386770;
-}
-
 .bb {
     border-bottom: 2px solid #373867;
-}
-
-nav {
-    padding: 88px 0px 65px 0;
-    border-bottom: 1px solid #373867D9;
-}
-
-nav li {
-    padding: 19px 0px;
-    list-style: none;
-}
-
-nav li a:hover {
-    color: #FF3E1D;
-}
-
-nav li + li {
-    border-top: 1px solid #373867B0;
-}
-
-nav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #373867;
 }
 
 p {

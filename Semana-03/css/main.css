@@ -272,16 +272,11 @@ input[name="contact_area"] {
     max-width: 333px;
     max-height: 227px;
 }
-#fifth-section div > img {
-    margin: 0px 10px 20px 0px;
-    float: left;
+
+#something-else h3{
+    margin: 20px 0;
 }
 
-.img-1, .img-2{
-    top: 0.25em;
-    max-width: 35%;
-}
-    
 .img-1{
     padding: 0 24px 16px 0;
     float: left;
