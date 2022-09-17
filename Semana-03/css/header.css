@@ -1,5 +1,5 @@
 header {
-    display: flex;  
+    display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px #F33413 solid;
@@ -30,5 +30,5 @@ header p{
 @media (min-width: 480px){
     #company p{
         font-size: 14px;
-    }    
+    }
 }

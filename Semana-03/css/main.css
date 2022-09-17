@@ -170,7 +170,7 @@ form{
 #info label{
     margin: 10px 0;
     font-weight: bold;
-} 
+}
 
 #info input{
     height: 30px;
@@ -307,7 +307,7 @@ input[name="contact_area"] {
 
     #contact-area {
         width: 40%;
-        margin-top: 30px;   
+        margin-top: 30px;
     }
 
     .f-info {
