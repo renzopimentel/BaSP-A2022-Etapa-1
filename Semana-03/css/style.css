@@ -11,8 +11,8 @@ body {
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* Header Styling */
@@ -34,17 +34,20 @@ h3{
     font-weight: 700;
 }
 
+p {
+    font-size: 14px;
+}
 
-.subheader {
-    font-size: 20px;
+.bold {
+    font-weight: 700;
 }
 
 .bb {
     border-bottom: 2px solid #373867;
 }
 
-p {
-    font-size: 14px;
+.subheader {
+    font-size: 20px;
 }
 
 #company{
@@ -66,16 +69,11 @@ p {
     color: #FF3E1D;
 }
 
-.bold {
-    font-weight: 700;
-}
-
 article {
     display: inline-block;
     box-sizing: border-box;
     width: 49%;
     margin-top: 25px;
-    padding-right: 65px;
     font-size: 14px;
 }
 
@@ -100,7 +98,7 @@ article {
 }
 
 input, textarea{
-   width: 96%;
+    width: 96%;
     margin: 10px 0px;
     padding: 8px;
     border: 1px solid #373867;

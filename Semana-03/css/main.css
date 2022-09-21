@@ -12,8 +12,8 @@ main{
 #first-section {
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
     align-items: center;
+    margin: 20px 0;
 }
 
 #first-section img{
@@ -52,24 +52,25 @@ main{
 
 #second-section article{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 15px;
     width: 90%;
+    gap: 15px;
 }
 
 #second-section article div{
     display: flex;
     flex-direction: column;
-    gap: 8px;
     flex-grow: 1;
+    gap: 8px;
+    text-align: center;
 }
 
 #second-section img {
-    width: 107px;
-    height: 107px;
     float: left;
+    width: 80%;
+    height: 80%;
     padding-right: 15px;
 }
 
@@ -92,6 +93,7 @@ main{
 
 .features article{
     flex-wrap: wrap;
+    width: 100%;
     margin: 10px 0px;
 }
 
@@ -189,8 +191,8 @@ form{
 }
 
 #contact-area label, #contact-area input {
-    margin: 5px 0px;
     width: initial;
+    margin: 5px 0px;
 }
 
 .message {
@@ -278,12 +280,14 @@ input[name="contact_area"] {
 }
 
 .img-1{
-    padding: 0 24px 16px 0;
     float: left;
+    width: 100%;
+    padding: 0 24px 16px 0;
 }
 
 .img-2{
     float: right;
+    width: 100%;
     padding: 0 0 16px 24px;
 }
 
@@ -294,6 +298,16 @@ input[name="contact_area"] {
     }
     #second-section article{
         width: 47%;
+        flex-direction: row;
+    }
+
+    #second-section article img{
+        width: 130px;
+        height: 110px;
+    }
+
+    #second-section article div{
+        text-align: left;
     }
 
     .features article {
@@ -314,13 +328,21 @@ input[name="contact_area"] {
         display: flex;
         justify-content: space-between;
     }
+
+    .img-1 {
+        width: auto;
+    }
+
+    .img-2 {
+        width: auto;
+    }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
     #main-header-footer-container {
-        margin-left: 19%;
         width: 80%;
+        margin-left: 19%;
     }
 
     .features article{

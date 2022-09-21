@@ -1,5 +1,5 @@
 aside{
-        display: none;
+    display: none;
 }
 
 nav {
@@ -35,10 +35,9 @@ nav a {
 }
 
 #sidebar-contact-ways a p{
+    margin: 25px 0 11px 0;
     text-decoration: none;
     color: #373867;
-    margin: 25px 0 11px 0;
-
 }
 
 #sidebar-contact-ways p{
