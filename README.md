@@ -41,6 +41,7 @@ This week we are implementing flexbox for the page layout, in order to make the 
   - Functions
 
 [Weekly Work](https://github.com/renzopimentel/BaSP-A2022-Etapa-1/tree/master/Semana-04)
+
 [Last Week Corrections](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html)
 
 By _Renzo Pimentel_
