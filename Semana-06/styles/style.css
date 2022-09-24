@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Header Styling */
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #FF3E1D;
+    text-underline-offset: 7px;
+}
+
+h3{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.bb {
+    border-bottom: 2px solid #373867;
+}
+
+.subheader {
+    font-size: 20px;
+}
+
+#company{
+    display: inline-block;
+    width: 85%;
+}
+
+#company > i{
+    float: left;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #5D5D5D;
+}
+
+.social-icons a:hover {
+    text-decoration: none;
+    color: #FF3E1D;
+}
+
+article {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 49%;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.btn {
+    padding: 8px 30px;
+    background-color: #fff;
+    border: 2px solid #FF3E1D;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FF3E1D;
+}
+
+.btn:hover {
+    background-color: #FF3E1D;
+    color: #373867;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+input, textarea{
+    width: 96%;
+    margin: 10px 0px;
+    padding: 8px;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    font: inherit;
+}
+
+
+
+

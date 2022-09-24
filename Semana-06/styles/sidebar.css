@@ -1,0 +1,63 @@
+aside{
+    display: none;
+}
+
+nav {
+    padding: 88px 0px 65px 0;
+    border-bottom: 1px solid #373867D9;
+}
+
+nav li {
+    padding: 19px 0px;
+    list-style: none;
+}
+
+nav li a:hover {
+    color: #FF3E1D;
+}
+
+nav li + li {
+    border-top: 1px solid #373867B0;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #373867;
+}
+
+.bb-side {
+    border-bottom: 1px solid #37386770;
+}
+
+#sidebar-contact h2{
+    margin: 65px 0 25px 0;
+}
+
+#sidebar-contact-ways a p{
+    margin: 25px 0 11px 0;
+    text-decoration: none;
+    color: #373867;
+}
+
+#sidebar-contact-ways p{
+    padding: 10px;
+}
+
+#sidebar-contact-ways i {
+    display: inline;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    aside {
+        display: block;
+        position: fixed;
+        float: left;
+        width: 18%;
+        height: 100%;
+        padding: 29px;
+        background-color: #AACE9B;
+    }
+}
