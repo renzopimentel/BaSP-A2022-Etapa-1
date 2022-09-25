@@ -1,0 +1,155 @@
+/* Login */
+header {
+    border-bottom: none;
+}
+
+.login_title {
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main p {
+    margin-top: 25px;
+    font-size: 14px;
+    text-align: center;
+}
+
+main a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer {
+    margin-bottom: 15px;
+    border-top: 2px #373867 solid;
+}
+
+.content {
+    padding: 1em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-container  {
+    border: 2px #373867 solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 20px;
+    padding: 50px;
+}
+
+.form-container h2 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-input label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-input input {
+    height: 40px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-input div{
+    width: 100%;
+    font-size: 18px;
+    color: #C62828;
+    background: rgba(255,0,0,0.1) ;
+    text-align : center;
+    padding: 5px 8px ;
+    border-radius : 3px;
+    border: 1px solid #EF9A9A;
+}
+
+#btn-login {
+    color: #fff;
+    background-color: #373867;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px 50px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+#btn-login:hover {
+    background-color: #AACE9B;
+    color: #fff;
+}
+
+.form-input input.border-green {
+    border: 1px solid #01d701;
+}
+
+.form-input input.border-red {
+    border: 1px solid #e10303;
+}
+
+.form-input p {
+    color: #ff0000;
+    font-size: 12px;
+    align-self: flex-end;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    .wrapper {
+        display: flex;
+    }
+
+    .content {
+        width: 80%;
+        padding-left: 1.5em;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        max-width: 185px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 100%;
+    }
+}
