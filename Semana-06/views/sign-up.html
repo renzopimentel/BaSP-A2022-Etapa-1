@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/sidebar.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/sign-up.css">
+        <script src="../javascript/sign-up.js"></script>
+        <title>Trackgenix</title>
+    </head>
+    <body>
+        <aside>
+            <h2>Menu</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                </ul>
+            </nav>
+            <div id="sidebar-contact">
+                <h2>Get in touch</h2>
+                <p>
+                    Explanation here of the correspondent component. We left this with a random text for
+                    the moment. This is just an example. Don't take this text seriously. Explanation here
+                    of the correspondent component. We left this with a random text for the moment. This is
+                    just an example. Don't take this text seriously.
+                </p>
+                <div id="sidebar-contact-ways">
+                    <div class="bb-side">
+                        <a href="mailto:info@trackgenix.com">
+                            <p>
+                                <i class="fa-regular fa-envelope"></i> info@trackgenix.com
+                            </p>
+                        </a>
+                    </div>
+                    <div class="bb-side">
+                       <p>
+                            <i class="fa fa-home"></i>  1234 Somewhere Road #8254 <span>Nashville, TN 00000-0000N</span>
+                        </p>
+                    </div>
+                    <p>
+                        <i class="fa fa-phone-flip"></i> (000)-000-0000
+                    </p>
+                </div>
+            </div>
+        </aside>
+        <div id="main-header-footer-container">
+            <header>
+                <i class="fa fa-solid fa-bars" id="burguer"></i>
+            </header>
+            <main>
+                <div class="form-container">
+                    <h1 class="login-title">Sign Up</h1>
+                    <form>
+                        <div class="form-inputs">
+                            <div class="form-input">
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" id="formName" placeholder="Enter your name">
+                            </div>
+                            <div class="form-input">
+                                <label for="last-name">Last name:</label>
+                                <input type="text" name="last-name" id="formLastName" placeholder="Enter your last name">
+                            </div>
+                            <div class="form-input">
+                                <label for="id">Id:</label>
+                                <input type="text" name="id" id="formId" placeholder="Enter your id number">
+                            </div>
+                            <div class="form-input">
+                                <label for="birthday">Birthday:</label>
+                                <input type="date" name="birthday" id="formBirthday" placeholder="Enter your birth date">
+                            </div>
+                            <div class="form-input">
+                                <label for="phone-number">Phone number:</label>
+                                <input type="text" name="phone-number" id="formNumber" placeholder="Enter your phone number">
+                            </div>
+                            <div class="form-input">
+                                <label for="adress">Adress:</label>
+                                <input type="text" name="adress" id="formAdress" placeholder="Enter your address">
+                            </div>
+                            <div class="form-input">
+                                <label for="city">City:</label>
+                                <input type="text" name="city" id="formCity" placeholder="Enter your city">
+                            </div>
+                            <div class="form-input">
+                                <label for="zip-code">Zip code:</label>
+                                <input type="text" name="zip-code" id="formZipCode" placeholder="Enter your zip code">
+                            </div>
+                            <div class="form-input email">
+                                <label for="email">Email:</label>
+                                <input type="text" name="email" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-input">
+                                <label for="password">Password:</label>
+                                <input type="password" name="password" id="formPassword" placeholder="Enter your password">
+                            </div>
+                            <div class="form-input">
+                                <label for="password-repeat">Repeat password:</label>
+                                <input type="password" name="password-repeat" id="formPassword2" placeholder="Repeat your password">
+                            </div>
+                        </div>
+                        <div class="form-btn-links">
+                            <p>Already have an account? <a href="./login.html">Login</a></p>
+                            <button id="btn-signup">Create</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
