@@ -111,12 +111,12 @@ footer {
     color: #fff;
 }
 
-.form-input input.border-green {
-    border: 1px solid #01d701;
+.form-input input.valid {
+    border: 1px solid #28a745;
 }
 
-.form-input input.border-red {
-    border: 1px solid #e10303;
+.form-input input.error {
+    border: 1px solid red;
 }
 
 .form-input p {

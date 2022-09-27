@@ -58,8 +58,7 @@ footer {
 .form-btn-links {
     display: flex;
     justify-content: space-between;
-    margin: 0 5em;
-
+    align-items: flex-start;
 }
 
 .form-btn-links p{
@@ -113,12 +112,18 @@ form p {
     margin-bottom: 0;
 }
 
-.border-green {
-    border: 1px solid #00FF00;
+.form-input input.valid {
+    border: 1px solid #28a745;
 }
 
-.border-red {
-    border: 1px solid #FF0000
+.form-input input.error {
+    border: 1px solid red;
+}
+
+@media (min-width: 480px){
+    .form-btn-links{
+        margin: 0;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -137,18 +142,7 @@ form p {
         margin: 0 20px;
     }
 
-    form input {
-        width: 100%;
-        margin: 10px 15px 15px 0;
+    .form-btn-links {
+        margin: 0 5em
     }
-
-    .email {
-        width: 85%;
-        margin: 0 20px;
-    }
-
-    /* #email {
-        width: 97%;
-        margin: 15px 0px 15px 0;
-    } */
 }
