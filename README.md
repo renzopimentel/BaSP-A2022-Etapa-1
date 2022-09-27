@@ -44,7 +44,7 @@ This week we are implementing flexbox for the page layout, in order to make the 
 
 [Last Week Corrections](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html)
 
-## Week 06 <sup>[[view]](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-06/index.html)</sup> - JS DOM
+## Week 06 <sup>[[view]](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-06/views/index.html)</sup> - JS DOM
 
 Login and Employee sign-up pages were created, adding all the necessary validations on inputs for each page.
 If all the inputs were correctly filled, it will show an alert confirming, otherwise it will alert you the inputs to
@@ -52,7 +52,7 @@ correct/fill.
 
 [Weekly Work](https://github.com/renzopimentel/BaSP-A2022-Etapa-1/tree/master/Semana-06)
 
-[Login Page](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-06/login.html)
-[Sign Up Page](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-06/sign-up.html)
+[Login Page](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-06/views/login.html)
+[Sign Up Page](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-06/views/sign-up.html)
 
 By _Renzo Pimentel_
