@@ -1,10 +1,10 @@
 window.onload = function() {
 
     //Variables
-    var formEmail = document.getElementById('formEmail');
-    var formPassword = document.getElementById('formPassword');
-    var passwordInput = document.getElementById('passwordInput');
-    var emailInput = document.getElementById('emailInput');
+    var formEmail = document.getElementById('email-form');
+    var formPassword = document.getElementById('password-form');
+    var passwordInput = document.getElementById('password-input');
+    var emailInput = document.getElementById('email-input');
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
     var p = document.createElement('p');
     var button = document.getElementById('btn-login');
@@ -16,7 +16,7 @@ window.onload = function() {
             p.innerHTML = 'Email is required'
             emailInput.appendChild(p);
         } else if (!emailExpression.test(formEmail.value)) {
-            formEmail.classList.add('red-border');
+            formEmail.classList.add('border-red');
             p.innerHTML = 'Correct format should be email@domain.com';
             emailInput.appendChild(p);
         } else {
@@ -33,17 +33,13 @@ window.onload = function() {
     formPassword.onblur = function() {
         var numbers = "0123456789";
         var validationNumber = false
+        var letters = "abcdefghyjklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+        var validationLetters = false
 
         for(i=0; i<formPassword.value.length; i++){
             if (numbers.indexOf(formPassword.value.charAt(i),0)!=-1){
                 validationNumber = true;
             }
-        }
-
-        var letters = "abcdefghyjklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
-        var validationLetters = false
-
-        for(i=0; i<formPassword.value.length; i++){
             if (letters.indexOf(formPassword.value.charAt(i),0)!=-1){
                 validationLetters = true;
             }
@@ -54,7 +50,7 @@ window.onload = function() {
             p.innerHTML = 'Password is required';
             passwordInput.appendChild(p);
         } else if (formPassword.value.length < 8 || validationNumber != true || validationLetters != true) {
-            formPassword.classList.add('red-border');
+            formPassword.classList.add('border-red');
             p.innerHTML = 'Password must have at least 8 characters of letters and numbers';
             passwordInput.appendChild(p);
         } else {
@@ -72,7 +68,7 @@ window.onload = function() {
         if (formEmail.classList.contains('border-green') && formPassword.classList.contains('border-green')){
             alert('Mail: ' + formEmail.value + '\nPassword: ' + formPassword.value);
         } else {
-            alert('Login Error')
+            alert('Login Error');
         }
   }
 }
