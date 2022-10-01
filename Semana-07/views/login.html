@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/sidebar.css">
+        <link rel="stylesheet" href="../styles/login.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <script src="../javascript/login.js"></script>
+        <title>Trackgenix</title>
+    </head>
+    <body>
+        <aside>
+            <h2>Menu</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sign-up.html">Sign Up</a></li>
+                    <li><a href="#">Log In</a></li>
+                </ul>
+            </nav>
+            <div id="sidebar-contact">
+                <h2>Get in touch</h2>
+                <p>
+                    Explanation here of the correspondent component. We left this with a random text for
+                    the moment. This is just an example. Don't take this text seriously. Explanation here
+                    of the correspondent component. We left this with a random text for the moment. This is
+                    just an example. Don't take this text seriously.
+                </p>
+                <div id="sidebar-contact-ways">
+                    <div class="bb-side">
+                        <a href="mailto:info@trackgenix.com">
+                            <p>
+                                <i class="fa-regular fa-envelope"></i> info@trackgenix.com
+                            </p>
+                        </a>
+                    </div>
+                    <div class="bb-side">
+                       <p>
+                            <i class="fa fa-home"></i>  1234 Somewhere Road #8254 <span>Nashville, TN 00000-0000N</span>
+                        </p>
+                    </div>
+                    <p>
+                        <i class="fa fa-phone-flip"></i> (000)-000-0000
+                    </p>
+                </div>
+            </div>
+        </aside>
+        <div id="main-header-footer-container">
+            <header>
+                <i class="fa fa-solid fa-bars" id="burguer"></i>
+            </header>
+            <main>
+                <div class="form-container">
+                    <h1 class="login_title">Log In</h1>
+                    <form name="form">
+                        <div class="form-input" id="email-input">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" id="email-form" placeholder="Enter your email">
+                            <!-- <div id="email_error">Please fill up your Email</div> -->
+                        </div>
+                        <div class="form-input" id="password-input">
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password-form" placeholder="Enter your password">
+                            <!-- <div id="password_error">Please fill up your Password</div> -->
+                        </div>
+                        <button id="btn-login">Login</button>
+                    </form>
+                    <p>If you don't have an account <a href="./sign-up.html">click here</a></p>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
