@@ -1,5 +1,4 @@
 window.onload = function(){
-    /* FUNCTIONS */
     function hasLetters(input) {
         for (var i = 0; i < input.length; i++){
             var charCode = input.charCodeAt(i)
@@ -34,7 +33,6 @@ window.onload = function(){
     var numbers = "0123456789";
     var letters = "abcdefghyjklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
 
-    /* NAME VALIDATION */
     var formName = inputs[0];
     var nameP = document.createElement('p');
 
@@ -72,7 +70,6 @@ window.onload = function(){
         removeP(formName);
     }
 
-    /* LAST NAME VALIDATION */
     var formLastName = inputs[1];
     var lastNameP = document.createElement('p');
 
@@ -110,7 +107,6 @@ window.onload = function(){
         removeP(formLastName);
     }
 
-    /* ID VALIDATION */
     var formId = inputs[2];
     var idP = document.createElement('p');
 
@@ -148,7 +144,6 @@ window.onload = function(){
         removeP(formId);
     }
 
-    /* BIRTHDAY VALIDATION */
     var formBirthday = inputs[3];
     var birthdayP = document.createElement('p');
 
@@ -166,7 +161,6 @@ window.onload = function(){
         removeP(formBirthday);
     }
 
-    /* PHONE VALIDATION */
     var formPhone = inputs[4];
     var phoneP = document.createElement('p');
 
@@ -204,7 +198,6 @@ window.onload = function(){
         removeP(formPhone);
     }
 
-    /* ADRESS VALIDATION */
     var formAdress = inputs[5];
     var adressP = document.createElement('p');
 
@@ -231,7 +224,6 @@ window.onload = function(){
         removeP(formAdress);
     }
 
-    /* CITY VALIDATION */
     var formCity = inputs[6];
     var cityP = document.createElement('p');
 
@@ -239,12 +231,14 @@ window.onload = function(){
         var validationLetters = false
         var validationNumber = false
 
-        for(i=0; i<formCity.value.length; i++){
-            if (numbers.indexOf(formCity.value.charAt(i),0)!=-1){
-                validationNumber = true;
-            }
-            if (letters.indexOf(formCity.value.charAt(i),0)!=-1){
+        for (var i = 0; i < formCity.value.length; i++){
+            var element = formCity.value;
+            var charCode = element.charCodeAt(i)
+            if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123)) {
                 validationLetters = true;
+            } else {
+                validationLetters = false;
+                break
             }
         }
 
@@ -254,7 +248,7 @@ window.onload = function(){
             formCity.parentElement.insertBefore(cityP, formCity.nextElementSibling)
         } else if (formCity.value.length < 4 || validationNumber != true && validationLetters != true) {
             formCity.classList.add('error');
-            cityP.innerHTML = 'City name must have more than 3 characters of letters&numbers';
+            cityP.innerHTML = 'City name must have more than 3 characters, only letters';
             formCity.parentElement.insertBefore(cityP, formCity.nextElementSibling)
         } else {
             formCity.classList.add('valid');
@@ -265,7 +259,6 @@ window.onload = function(){
         removeP(formCity);
     }
 
-    /*  ZIP CODE VALIDATION */
     var formZipCode = inputs[7];
     var zipCodeP = document.createElement('p');
 
@@ -304,7 +297,6 @@ window.onload = function(){
     }
 
 
-    /* EMAIL VALIDATION */
     var formEmail = inputs[8];
     var emailP = document.createElement('p');
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
@@ -327,7 +319,6 @@ window.onload = function(){
         removeP(formEmail);
     }
 
-    /* PASSWORD VALIDATION */
     var formPassword = inputs[9];
     var passwordP = document.createElement('p');
 
@@ -362,7 +353,6 @@ window.onload = function(){
         removeP(formPassword);
     }
 
-    /* PASSWORD REPEAT VALIDATION */
     var formPassword2 = inputs[10];
     var password2P = document.createElement('p');
 
@@ -400,38 +390,59 @@ window.onload = function(){
         removeP(formPassword2);
     }
 
-    /* BUTTON */
     var button = document.getElementById('btn-signup');
 
     button.onclick = function (e) {
-        e.preventDefault();
-        var completed = 0;
-        var errors = [];
-        var message = '';
-        for (var i = 0; i < inputs.length; i++) {
-            if (inputs[i].classList.contains('valid')) {
-                completed++;
-            } else if (inputs[i].classList.contains('error')) {
-                errors.push(inputs[i].nextElementSibling);
-            }
-        }
-        if (completed == inputs.length) {
-            message = 'Sign up successful!\n';
-            for (var i = 0; i < inputs.length; i++) {
-                message += inputs[i].name + ': ' + inputs[i].value + '\n';
-            }
+        var birthday = formBirthday.value;
+        var dateSplit = birthday.split('-');
+        birthday = dateSplit[1] + '/'+dateSplit[2]+ '/' + dateSplit[0];
 
-        } else if (errors.length == 0) {
-            message = 'All fields are required.';
-        } else {
-            message = 'Something went wrong\n';
-            if (errors.length + completed !== inputs.length) {
-                message += 'Complete all fields\n'
-            }
-            for (var i = 0; i < errors.length; i++) {
-                message += errors[i].innerHTML + '\n';
-            }
-        }
-        alert(message);
+        var name = formName.value;
+        var lastName = formLastName.value;
+        var id = formId.value;
+        var phone = formPhone.value;
+        var address = formAdress.value;
+        var city = formCity.value;
+        var zipCode = formZipCode.value
+        var email = formEmail.value;
+        var password = formPassword.value;
+
+        var queryParams = 'name=' + name + '&lastName=' + lastName + '&dni=' + id + '&dob=' + birthday + '&phone=' + phone
+        + '&address=' + address + '&city=' + city + '&zip=' + zipCode + '&email=' + email + '&password=' + password;
+        var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?' + queryParams;
+
+        fetch(url)
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(data){
+                if(data.success){
+                    localStorage.setItem('name', name);
+                    localStorage.setItem('lastName', lastName);
+                    localStorage.setItem('id', id);
+                    localStorage.setItem('birthday', birthday);
+                    localStorage.setItem('phone', phone);
+                    localStorage.setItem('address', address);
+                    localStorage.setItem('city', city);
+                    localStorage.setItem('zipCode', zipCode);
+                    localStorage.setItem('email', email);
+                    localStorage.setItem('password', password);
+                    alert('Signup successful! ' + data.msg + '\nName: ' + name + '\nLast name: ' + lastName + '\nDNI: ' + id
+                    + '\nBirthday: ' + birthday + '\nPhone number: ' + phone + '\nAddress: ' + address + '\nCity: ' + city
+                    + '\nZip Code: ' + zipCode + '\nEmail: ' + email + '\nPassword: ' + password);
+                } else if (data.errors){
+                    var messages = ''
+                    for (var error of data.errors) {
+                        messages += error.msg + '\n'
+                    }
+                    throw new Error(messages);
+                } else {
+                    alert(data.msg);
+                }
+            })
+            .catch(function(error) {
+                alert(error);
+            })
+        e.preventDefault();
     }
 }
