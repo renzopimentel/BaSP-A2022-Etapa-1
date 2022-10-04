@@ -52,7 +52,7 @@ footer {
 .form-inputs {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-left: 20px;
 }
 
 .form-btn-links {
