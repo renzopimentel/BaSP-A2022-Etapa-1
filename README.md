@@ -56,4 +56,15 @@ correct/fill.
 
 [Sign Up Page](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-06/views/sign-up.html)
 
+## Week 07 <sup>[[view]](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-07/views/index.html)</sup> - JS Promises & Fetch
+
+This week consists of extending the functionality of the login and signup forms making the information loaded in each one of them to be sent to a web server using the JavaScript fetch method.
+The information of the signup form will be saved in LocalStorage to be used in the same form when loading the page if all the inputs are in the correct format.
+
+[Weekly Work](https://github.com/renzopimentel/BaSP-A2022-Etapa-1/tree/master/Semana-07)
+
+[Login Page](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-07/views/login.html)
+
+[Sign Up Page](https://renzopimentel.github.io/BaSP-A2022-Etapa-1/Semana-07/views/sign-up.html)
+
 By _Renzo Pimentel_
