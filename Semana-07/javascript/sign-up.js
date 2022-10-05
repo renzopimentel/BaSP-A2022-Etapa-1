@@ -28,6 +28,13 @@ window.onload = function(){
         }
     }
 
+    function convertDate(date){
+        [month, day, year] = date.split('/');
+        var dateFormat = [year, month, day].join('-')
+
+        return dateFormat
+    }
+
     var inputs = document.getElementsByTagName('input');
     var inputsP = document.getElementsByClassName('form-input');
     var numbers = "0123456789";
@@ -146,11 +153,27 @@ window.onload = function(){
 
     var formBirthday = inputs[3];
     var birthdayP = document.createElement('p');
+    var dateString
+
+    function getAge(dateString) {
+        var today = new Date();
+        var birthDate = new Date(dateString);
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        return age;
+    }
 
     formBirthday.onblur = function() {
         if (formBirthday.value == '') {
             formBirthday.classList.add('error');
             birthdayP.innerHTML = 'Birthday is required'
+            formBirthday.parentElement.insertBefore(birthdayP, formBirthday.nextElementSibling)
+        } else if (getAge(formBirthday.value) < 18){
+            formBirthday.classList.add('error');
+            birthdayP.innerHTML = 'You should be at least 18 years old for signing up';
             formBirthday.parentElement.insertBefore(birthdayP, formBirthday.nextElementSibling)
         } else {
             formBirthday.classList.add('valid')
@@ -390,6 +413,19 @@ window.onload = function(){
         removeP(formPassword2);
     }
 
+    function successfulModal(data){
+        modalContainer.style.display = " block ";
+        modalTitle.innerHTML = " Sign Up Succesfully! ";
+        modalData.innerHTML = `${data.msg}`;
+    }
+
+    function errorModal(errorInfo){
+        var jsonString = JSON.stringify(errorInfo);
+        modalContainer.style.display = "block";
+        modalTitle.innerHTML = " Sorry, there was an error ";
+        modalData.innerHTML = `${errorInfo.msg}`;
+    }
+
     var button = document.getElementById('btn-signup');
 
     button.onclick = function (e) {
@@ -427,7 +463,7 @@ window.onload = function(){
                     localStorage.setItem('zipCode', zipCode);
                     localStorage.setItem('email', email);
                     localStorage.setItem('password', password);
-                    alert('Signup successful! ' + data.msg + '\nName: ' + name + '\nLast name: ' + lastName + '\nDNI: ' + id
+                    alert('Signup successful! ' + data.msg + '\nName: ' + name + '\nLast name: ' + lastName + '\nID: ' + id
                     + '\nBirthday: ' + birthday + '\nPhone number: ' + phone + '\nAddress: ' + address + '\nCity: ' + city
                     + '\nZip Code: ' + zipCode + '\nEmail: ' + email + '\nPassword: ' + password);
                 } else if (data.errors){
@@ -446,3 +482,17 @@ window.onload = function(){
         e.preventDefault();
     }
 }
+
+if (localStorage.getItem("name") != null) {
+    formName.value = localStorage.getItem('name');
+    formLastName.value = localStorage.getItem('lastName');
+    formId.value = localStorage.getItem('id');
+    formBirthday.value = convertDate(localStorage.getItem('birthday'));
+    formPhone.value = localStorage.getItem('phone');
+    formAdress.value = localStorage.getItem('address');
+    formCity.value = localStorage.getItem('city');
+    formZipCode.value = localStorage.getItem('zipCode');
+    formEmail.value = localStorage.getItem('email');
+    formPassword.value = localStorage.getItem('password');
+    formPassword2.value = localStorage.getItem('password');
+};
