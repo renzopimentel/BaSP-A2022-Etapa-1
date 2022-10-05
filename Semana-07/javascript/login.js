@@ -82,7 +82,7 @@ window.onload = function() {
     function successfulModal(data){
         modalContainer.style.display = " block ";
         modalTitle.innerHTML = " Login Succesfully! ";
-        modalData.innerHTML = `${data.msg}`;
+        modalData.innerHTML = 'Email: ' + formEmail.value + '<br />' + 'Password: ' + formPassword.value;
     }
 
     function errorModal(errorInfo){

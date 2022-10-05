@@ -221,30 +221,30 @@ window.onload = function(){
         removeP(formPhone);
     }
 
-    var formAdress = inputs[5];
+    var formAddress = inputs[5];
     var adressP = document.createElement('p');
 
-    formAdress.onblur = function() {
-        var blankSpace = formAdress.value.indexOf(' ')
-        if ((formAdress.value).length == '') {
-            formAdress.classList.add('error')
+    formAddress.onblur = function() {
+        var blankSpace = formAddress.value.indexOf(' ')
+        if ((formAddress.value).length == '') {
+            formAddress.classList.add('error')
             adressP.innerHTML = ('Adress is required')
-            formAdress.parentElement.insertBefore(adressP, formAdress.nextElementSibling)
-        } else if ((formAdress.value).length < 5) {
-            formAdress.classList.add('error')
+            formAddress.parentElement.insertBefore(adressP, formAddress.nextElementSibling)
+        } else if ((formAddress.value).length < 5) {
+            formAddress.classList.add('error')
             adressP.innerHTML = ('Adress must have at least 5 characters')
-            formAdress.parentElement.insertBefore(adressP, formAdress.nextElementSibling)
-        } else if (!hasLetters((formAdress.value).substring(0, blankSpace)) || !hasNumbers((formAdress.value).substring(blankSpace+1, (formAdress.value).length))){
-            formAdress.classList.add('error')
+            formAddress.parentElement.insertBefore(adressP, formAddress.nextElementSibling)
+        } else if (!hasLetters((formAddress.value).substring(0, blankSpace)) || !hasNumbers((formAddress.value).substring(blankSpace+1, (formAddress.value).length))){
+            formAddress.classList.add('error')
             adressP.innerHTML = ('Wrong adress format')
-            formAdress.parentElement.insertBefore(adressP, formAdress.nextElementSibling)
+            formAddress.parentElement.insertBefore(adressP, formAddress.nextElementSibling)
         } else {
-            formAdress.classList.add('valid')
+            formAddress.classList.add('valid')
         }
     }
 
-    formAdress.onfocus = function() {
-        removeP(formAdress);
+    formAddress.onfocus = function() {
+        removeP(formAddress);
     }
 
     var formCity = inputs[6];
@@ -413,17 +413,30 @@ window.onload = function(){
         removeP(formPassword2);
     }
 
+    var modalContainer = document.getElementById("modal-suscription");
+    var modalTitle = document.querySelector(".modal-content > h3");
+    var modalData = document.querySelector(".modal-content > ul");
+
     function successfulModal(data){
         modalContainer.style.display = " block ";
-        modalTitle.innerHTML = " Sign Up Succesfully! ";
-        modalData.innerHTML = `${data.msg}`;
+        modalTitle.innerHTML = data.msg;
+        modalData.innerHTML =   'Name: ' + formName.value + '<br />' +
+                                'LastName: ' + formLastName.value + '<br />' +
+                                'Id: ' + formId.value + '<br />' +
+                                'Birthday: ' + formBirthday.value + '<br />' +
+                                'Phone: ' + formPhone.value + '<br />' +
+                                'Address: ' + formAddress.value + '<br />' +
+                                'City: ' + formCity.value + '<br />' +
+                                'Zip Code: ' + formZipCode.value + '<br />' +
+                                'Email: ' + formEmail.value + '<br />' +
+                                'Password: ' + formPassword.value;
     }
 
     function errorModal(errorInfo){
         var jsonString = JSON.stringify(errorInfo);
         modalContainer.style.display = "block";
         modalTitle.innerHTML = " Sorry, there was an error ";
-        modalData.innerHTML = `${errorInfo.msg}`;
+        modalData.innerHTML = errorInfo;
     }
 
     var button = document.getElementById('btn-signup');
@@ -437,7 +450,7 @@ window.onload = function(){
         var lastName = formLastName.value;
         var id = formId.value;
         var phone = formPhone.value;
-        var address = formAdress.value;
+        var address = formAddress.value;
         var city = formCity.value;
         var zipCode = formZipCode.value
         var email = formEmail.value;
@@ -463,9 +476,7 @@ window.onload = function(){
                     localStorage.setItem('zipCode', zipCode);
                     localStorage.setItem('email', email);
                     localStorage.setItem('password', password);
-                    alert('Signup successful! ' + data.msg + '\nName: ' + name + '\nLast name: ' + lastName + '\nID: ' + id
-                    + '\nBirthday: ' + birthday + '\nPhone number: ' + phone + '\nAddress: ' + address + '\nCity: ' + city
-                    + '\nZip Code: ' + zipCode + '\nEmail: ' + email + '\nPassword: ' + password);
+                    successfulModal(data);
                 } else if (data.errors){
                     var messages = ''
                     for (var error of data.errors) {
@@ -473,7 +484,7 @@ window.onload = function(){
                     }
                     throw new Error(messages);
                 } else {
-                    alert(data.msg);
+                    errorModal(data.msg)
                 }
             })
             .catch(function(error) {
@@ -489,7 +500,7 @@ if (localStorage.getItem("name") != null) {
     formId.value = localStorage.getItem('id');
     formBirthday.value = convertDate(localStorage.getItem('birthday'));
     formPhone.value = localStorage.getItem('phone');
-    formAdress.value = localStorage.getItem('address');
+    formAddress.value = localStorage.getItem('address');
     formCity.value = localStorage.getItem('city');
     formZipCode.value = localStorage.getItem('zipCode');
     formEmail.value = localStorage.getItem('email');
